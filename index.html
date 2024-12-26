@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightskyblue;
+            padding: 10px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: green;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            font-weight: lighter;
+            margin-bottom: 10px;
+            color: black;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+       
+        textarea {
+            width: 100%;
+            padding: 9px;
+            border: 1px solid bisque;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+            height: 50px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: brown;
+            color: white;
+            font-size: 16px;
+            border: goldenrod;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="" method="POST">
+      <!--To create a field for firstname-->
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+            </div>
+
+        <!--To create a field for last name-->
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+            </div>
+
+         <!--To create a field for phone number-->
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Enter your phone number" pattern="[0-9]{10}">
+            </div>
+            <!--To create a field for email-->
+        
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            <!--To create a field for Address-->
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required placeholder="Enter your address"></textarea>
+            </div>
+         <!--To create a field for city-->
+            <div class="form-group">
+                <label for="city">City:</label>
+                <textarea id="city" name="city" required placeholder="Enter your city name"></textarea>
+                </div>
+            <!--To create a field for state-->
+                <div class="form-group">
+                <label for="State">state:</label>
+                <textarea id="state" name="state" required placeholder="Enter your state name"></textarea>
+                </div>
+            <!--To create a field for pincode-->
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <textarea id="pincode"  name="pincode" required placeholder="Enter your pincode"></textarea>
+
+            </div>
+         
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
